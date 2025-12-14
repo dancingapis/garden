@@ -1,35 +1,48 @@
-/* --- STYL BARBARY - Wersja na Tabeli --- */
+/* --- POPRAWKA WYŚRODKOWANIA --- */
 
-/* 1. Ustawienia ogólne (kolory Teresy) */
-:root, body {
-    --bg-color: #fff5f5 !important; /* Różowawe tło */
-    background-color: #fff5f5 !important;
-    font-family: 'Georgia', serif !important;
-}
-
-/* 2. Ukrywanie ramek tabeli - kluczowy trik! */
+/* 1. Wyśrodkowanie całej tabeli na ekranie */
 table {
-    border: none !important;
-    border-collapse: collapse !important;
-    margin-bottom: 30px !important;
+    margin-left: auto !important;  /* Margines auto z lewej */
+    margin-right: auto !important; /* Margines auto z prawej */
+    max-width: 750px !important;   /* Ograniczenie szerokości, żeby się nie rozłaziło */
+    border: none !important;       /* Brak ramek */
 }
 
-/* Komórki tabeli */
+/* 2. Ustawienie komórek w środku */
 td, th, tr {
     border: none !important;
     background: transparent !important;
-    vertical-align: middle !important; /* Wyrównaj tekst do środka wysokości obrazka */
-    padding: 10px 20px !important; /* Odstępy */
+    
+    /* TO JEST KLUCZ DO "PROSTEGO" TEKSTU: */
+    vertical-align: middle !important; /* Ustawia tekst idealnie w połowie wysokości zdjęcia */
+    padding: 20px !important;          /* Trochę oddechu */
 }
 
-/* 3. Styl tekstu w tabeli */
+/* 3. Kolumna ze zdjęciem */
+td:first-child {
+    width: 180px; /* Sztywna szerokość dla kolumny zdjęcia */
+    text-align: center; /* Wyśrodkowanie zdjęcia w jego kolumnie */
+}
+
+/* 4. Kolumna z tekstem */
+td:last-child {
+    text-align: left; /* Tekst czytamy od lewej */
+}
+
+/* 5. Styl zdjęcia */
+table img {
+    width: 150px !important;
+    height: 150px !important;
+    border-radius: 50% !important;
+    object-fit: cover !important;
+    display: block; /* Naprawia dziwne odstępy pod zdjęciem */
+    margin: 0 auto !important;
+}
+
+/* 6. Styl nagłówka (Cześć jestem Barbara...) */
 td h1 {
-    margin-top: 0 !important; /* Usunięcie odstępu nad nagłówkiem */
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+    line-height: 1.2 !important;
     font-size: 1.8em !important;
-    font-family: sans-serif !important;
-}
-
-/* 4. Wyśrodkowanie linków na dole */
-p {
-    text-align: center;
 }

@@ -1,13 +1,53 @@
+/* --- STYL a la Teresa Watts --- */
+
+/* 1. Reset kolorów (wymuszenie jasnego motywu) */
+:root, body {
+    --bg-color: #ffffff !important;
+    --fg-color: #2e2e2e !important; /* Ciemnoszary tekst */
+    --h1-color: #000000 !important;
+    --h2-color: #111111 !important;
+    --link-color: #000000 !important;
+    background-color: #ffffff !important;
+}
+
+/* 2. Główna czcionka - Szeryfowa (jak w książkach) */
 body {
-    /***
-      ADD YOUR CUSTOM STYLING HERE. (INSIDE THE body {...} section.)
-      IT WILL TAKE PRECEDENCE OVER THE STYLING IN THE STYLE.CSS FILE.
-   ***/
-    //  background-color: white;
-    //  .content {
-    //   font-size: 14px;
-    //  }
-    //  h1 {
-    //   color: black;
-    //  }
+    font-family: 'Georgia', 'Times New Roman', serif !important;
+    line-height: 1.6;
+    font-size: 18px; /* Nieco większy tekst dla czytelności */
+}
+
+/* 3. Nagłówki - Proste i nowoczesne */
+h1, h2, h3, h4, h5, h6 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif !important;
+    font-weight: 700;
+    margin-top: 2.5em; /* Dużo powietrza nad nagłówkami */
+    margin-bottom: 1em;
+}
+
+/* 4. Linki - Styl "podkreślenie" */
+a {
+    text-decoration: underline !important;
+    text-decoration-color: #d1d1d1 !important; /* Jasnoszare podkreślenie */
+    text-decoration-thickness: 1px;
+    transition: all 0.2s ease;
+}
+
+a:hover {
+    text-decoration-color: #000000 !important; /* Czarne podkreślenie po najechaniu */
+    background-color: transparent !important;
+}
+
+/* 5. Minimalizm nawigacji (opcjonalne) */
+/* Ukrywa stopkę/breadcrumb jeśli chcesz super czysty wygląd */
+.content-header, .refs-header {
+    opacity: 0.6;
+    font-size: 0.9em;
+    font-family: sans-serif;
+}
+
+/* 6. Zdjęcia bez ramek */
+img {
+    border-radius: 0 !important;
+    box-shadow: none !important;
 }

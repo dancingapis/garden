@@ -3,14 +3,12 @@
 ---
 
 
-# hi! 
+# Barbara 
 
-welcome at barb's!    ![dwujka.png|200](/img/user/dwujka.png)                                                    
+[[writing\|Writing]]  |  [[making\|Making]]  |  [[reading\|Reading]]  |  [[now\|Now]]
+
+---
+
+![dwujka.png|300](/img/user/dwujka.png)
 
 
-### 🌱 here
-
-* [[reading\|reading]]
-* [[writing\|writing]]
-* [[making\|making]] 
-* [[now\|now]] 

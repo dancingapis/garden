@@ -1,15 +1,15 @@
-/* --- KOMPLETNY STYL TWOJEGO OGRODU --- */
+/* --- STYL BARBARY (Wersja Centrowana) --- */
 
-/* 1. TŁO I KOLORY (Różowy Teresy) */
+/* 1. TŁO I KOLORY */
 :root, body {
-    --bg-color: #fff5f5 !important; /* Różowy */
-    --fg-color: #222222 !important; /* Ciemny tekst */
+    --bg-color: #fff5f5 !important;
+    --fg-color: #222222 !important;
     background-color: #fff5f5 !important;
 }
 
 /* 2. CZCIONKI */
 body {
-    font-family: 'Georgia', serif !important; /* Szeryfowa */
+    font-family: 'Georgia', serif !important;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -19,45 +19,71 @@ h1, h2, h3 {
     margin-top: 0 !important;
 }
 
-/* 3. NAPRAWA TABELI (Wyśrodkowanie) */
+/* 3. NAPRAWA UKŁADU (To usunie puste miejsce po lewej) */
+
+/* Ukrywamy boczny pasek (sidebar) */
+.sidebar, .file-tree-container {
+    display: none !important;
+}
+
+/* Wyśrodkowujemy główną treść */
+/* To jest najważniejsza część - resetuje marginesy */
+body, main, .content, #main-content {
+    margin-left: auto !important;
+    margin-right: auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    width: 100% !important;
+    max-width: 800px !important; /* Ograniczenie szerokości dla czytelności */
+    display: block !important;
+}
+
+/* 4. TABELA (Wizytówka) */
 table {
-    margin-left: auto !important;  /* Pchaj od lewej */
-    margin-right: auto !important; /* Pchaj od prawej = ŚRODEK */
-    width: auto !important;        /* Nie rozciągaj na siłę */
-    max-width: 800px !important;   /* Ale nie bądź szersza niż ekran */
-    border: none !important;       /* Usuń ramki */
+    margin: 40px auto !important; /* Odstęp góra/dół + auto boki */
+    width: 100% !important;
+    border: none !important;
     border-collapse: collapse !important;
     background: transparent !important;
 }
 
-/* 4. KOMÓRKI TABELI (Wyrównanie pionowe) */
 td, th, tr {
     border: none !important;
     background: transparent !important;
-    padding: 20px !important;
-    
-    /* TO JEST KLUCZ DO RÓWNEGO TEKSTU: */
-    vertical-align: middle !important; /* Tekst w połowie wysokości zdjęcia */
+    padding: 15px !important;
+    vertical-align: middle !important; /* Tekst na środku wysokości */
 }
 
-/* 5. ZDJĘCIE (Logo w kółku) */
+/* Kolumna ze zdjęciem */
+td:first-child {
+    width: 30%; /* Ustalamy proporcje */
+    text-align: right; /* Zdjęcie "tuli się" do tekstu */
+}
+
+/* Kolumna z tekstem */
+td:last-child {
+    width: 70%;
+    text-align: left;
+}
+
+/* 5. ZDJĘCIE (Logo) */
 table img {
     width: 150px !important;
     height: 150px !important;
-    border-radius: 50% !important; /* Kółko */
+    border-radius: 50% !important;
     object-fit: cover !important;
     display: block !important;
-    margin: 0 auto !important; /* Zdjęcie na środku swojej kolumny */
+    margin-left: auto !important; /* Dosuń zdjęcie do tekstu */
+    margin-right: 20px !important;
 }
 
-/* 6. LINKI NA DOLE (Menu) */
+/* 6. MENU NA DOLE */
+p {
+    text-align: center;
+}
+
 a {
     color: #000 !important;
     text-decoration: underline;
     text-decoration-color: #ccc;
-}
-
-/* Centrowanie paragrafów (dla menu na dole) */
-p {
-    text-align: center;
 }

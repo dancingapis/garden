@@ -54,3 +54,39 @@ img {
     border-radius: 0 !important;
     box-shadow: none !important;
 }
+/* --- NOWE STYLE: Układ a la Teresa --- */
+
+/* 1. Kontener na "Logo" (zdjęcie) i Tekst powitalny */
+.hero-section {
+    display: flex;
+    align-items: center; /* Wyrównanie w pionie */
+    gap: 30px; /* Odstęp między zdjęciem a tekstem */
+    margin-bottom: 40px; /* Odstęp od reszty strony */
+    flex-wrap: wrap; /* Żeby na telefonie spadało pod spód */
+}
+
+/* 2. Styl zdjęcia (Twojego logo) */
+.hero-avatar {
+    width: 150px;  /* Rozmiar zdjęcia */
+    height: 150px;
+    border-radius: 50%; /* Robi kółko ze zdjęcia */
+    object-fit: cover;
+    flex-shrink: 0; /* Żeby się nie zgniatało */
+}
+
+/* 3. Styl Dużego Tekstu (Opis) */
+.big-text {
+    font-size: 1.4em; /* Powiększenie tekstu (ok. 24px) */
+    line-height: 1.5;
+    font-weight: 400;
+    color: #111; /* Mocny czarny kolor */
+    font-family: 'Georgia', serif;
+}
+
+/* 4. Wyśrodkowanie menu (linków) */
+.nav-links {
+    text-align: center; /* Jeśli chcesz na środku */
+    font-size: 1.1em;
+    margin-top: 20px;
+    font-family: sans-serif; /* Linki czcionką prostą */
+}

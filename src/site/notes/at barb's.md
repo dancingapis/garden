@@ -5,9 +5,9 @@
 
 # hi! 
 
-welcome at barb's!                                                           ![zdj-prof.png|200](/img/user/zdj-prof.png)
+welcome at barb's!                                                        
 
-
+![zdj-prof.png|200](/img/user/zdj-prof.png)
 ### 🌱 here
 
 * [[reading\|reading]]

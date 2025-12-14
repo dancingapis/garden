@@ -1,13 +1,16 @@
 /* --- STYL a la Teresa Watts --- */
 
-/* 1. Reset kolorów (wymuszenie jasnego motywu) */
+/* 1. Reset kolorów (wymuszenie tła a la Teresa) */
 :root, body {
-    --bg-color: #ffffff !important;
-    --fg-color: #2e2e2e !important; /* Ciemnoszary tekst */
-    --h1-color: #000000 !important;
+    /* Tu zmieniamy kolor tła na delikatny róż: */
+    --bg-color: #fff5f5 !important; 
+    --fg-color: #2e2e2e !important; 
+    --h1-color: #111111 !important;
     --h2-color: #111111 !important;
     --link-color: #000000 !important;
-    background-color: #ffffff !important;
+    
+    /* To też musi być zmienione: */
+    background-color: #fff5f5 !important;
 }
 
 /* 2. Główna czcionka - Szeryfowa (jak w książkach) */
